@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
-import imgUrl from "./img/vizArc-bg.png";
+import imgUrl from "./images/vizArc-bg.png";
+import './about/about.css';
 
 const About = () => (
   <Fragment>
@@ -18,7 +19,7 @@ const About = () => (
             <h1 className="text-uppercase">
               <strong>Ray Norman</strong>
             </h1>
-            <img src={require("./img/rn-150-image.png")} alt="Ray Norman" />
+            <img src={require("./images/rn-150-image.png")} alt="Ray Norman" />
             <hr />
           </Col>
 
