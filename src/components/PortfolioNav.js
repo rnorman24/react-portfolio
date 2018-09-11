@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
 const PortfolioNav = () => (
-  <Navbar style={{ background: 'black' }}>
+  <Navbar style={{ background: "black" }}>
     <NavbarBrand href="/">Ray Norman</NavbarBrand>
     <Nav>
       <NavItem>
