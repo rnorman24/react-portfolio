@@ -319,11 +319,11 @@ main > section > footer > a {
 
 
 section:nth-child(even) {
-  background: #f0efeb; //#f2eee4;
+  background: #f0efeb; /*#f2eee4;*/
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 section:nth-child(odd) {
-  background: #fbf9f6; //#f8f6ed;
+  background: #fbf9f6; /*#f8f6ed;*/
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
 }
 .note {
