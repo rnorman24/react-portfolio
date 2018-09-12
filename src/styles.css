@@ -287,38 +287,35 @@ main > section > ul.demo-list > li > a::before {
 main > section > ul.demo-list > li > a::after {
   content:']';
 }
-
-
-img {
+main > section > img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   display: block;
   margin-bottom: 1rem;
 }
-> footer {
+main > section > footer {
   display: flex;
   color: lighten(var(--text), 50%);
   font-size: 0.85rem;
-  div {
-    flex: 1;      
-  }
-  h4 {
-    font-weight: 300;
-    margin: 0.25rem 0;
-  }
-  ul {
-    margin: 0;
-    list-style: square;
-    padding: 0 0 0 1rem;
-  }
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    color: inherit;
-  }
 }
-
+main > section > footer > div {
+  flex: 1;      
+}
+main > section > footer > h4 {
+  font-weight: 300;
+  margin: 0.25rem 0;
+}
+main > section > footer > ul {
+  margin: 0;
+  list-style: square;
+  padding: 0 0 0 1rem;
+}
+main > section > footer > li {
+  margin: 0;
+  padding: 0;
+}
+main > section > footer > a {
+  color: inherit;
+}
 
 
 section:nth-child(even) {
