@@ -330,22 +330,22 @@ section:nth-child(odd) {
   margin: 0.3rem 0 0;
   font-size: 0.85rem;
   font-style: italic;
-  a {
-    border-bottom: 1px dotted #9C9C9C;
-  }
+}
+.note > a {
+  border-bottom: 1px dotted #9C9C9C;
 }
 main > footer {  
   background: darken(var(--text), 5%);
   color: #fff;
   padding: 3rem;
-  a {
-    color: #eee;
-    text-decoration: underline;
-  }
-  p {
-    margin-bottom: 0;
-  }
-  ul {
-    margin: 0;
-  }
+}
+main > footer > a {
+  color: #eee;
+  text-decoration: underline;
+}
+main > footer > p {
+  margin-bottom: 0;
+}
+main > footer > ul {
+  margin: 0;
 }
