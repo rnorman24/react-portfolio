@@ -92,7 +92,7 @@ header > a {
     padding-top: 1rem;
     padding-bottom: 12rem;
   }
-  .header-wrapper {   
+  header.header-wrapper {   
     width: 66vw;
     display: grid; 
     margin: auto;
@@ -101,11 +101,11 @@ header > a {
     grid-gap: 1rem;
     transform: rotate(-45deg);
   } 
-  h1:nth-child(1) { 
+  header > h1:nth-child(1) { 
     grid-column: 1 / 4;
     text-align: right;
   }
-  h1:nth-child(2) { 
+  header > h1:nth-child(2) { 
     color: var(--red);
     writing-mode: vertical-lr;
     grid-column: 3 / 4;
@@ -114,41 +114,36 @@ header > a {
     margin-top: -10px;
     margin-right: -10px;
   } 
-  img {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    /*transform: rotate(45deg);*/
-  }
-  p {
+  header > p {
     margin: 0;
     color: var(--text);
   }
-  a {
+  header > a {
     border-bottom: none;
     text-transform: uppercase;
     color: var(--text);
     font-weight: 700;
   }
-  .demo-list { 
+  header.demo-list { 
     grid-column: 1 / 3;
     grid-row: 4 / span 2;
     font-weight: 700;
     line-height: 1.2;
     align-self: end;
   }
-  .demo-list > li {
+  header.demo-list > li {
     border-top: 5px solid var(--text);
     text-align: left;
     padding: 2px 0;
   }
-  .demo-list > li:last-child {
+  header.demo-list > li:last-child {
     border-bottom: 5px solid var(--text);
   }
-  .demo-list > p {
+  header.demo-list > p {
     padding: 2px 0;
   }
 
-  .follow-links { 
+  header.follow-links { 
     grid-column: 3 / 6;
     grid-row: 5;
     font-size: 0.9rem;
@@ -159,7 +154,7 @@ header > a {
     padding-bottom: 5px;
     font-weight: 400;
   }
-  .workshop-link { 
+  header.workshop-link { 
     border-top: 5px solid var(--text);
     border-bottom: 5px solid var(--text);
     font-weight: 700;
@@ -173,17 +168,17 @@ header > a {
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    .header-wrapper {   
+    header.header-wrapper {   
       transform: rotate(0);
     }   
-    h1:nth-child(2) {
+    header > h1:nth-child(2) {
       margin-top: -5px;
     }    
-    .workshop-link {
+    header.workshop-link {
       margin-left: 1rem;
       align-self: start;
     }
-    .follow-links {
+    header.follow-links {
       border-bottom: 20px solid var(--red);
     }
   }
