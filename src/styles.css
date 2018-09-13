@@ -173,7 +173,7 @@ header > a {
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    .header-wrapper {   
+    header.header-wrapper {   
       transform: rotate(0);
     }   
     h1:nth-child(2) {

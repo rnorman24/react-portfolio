@@ -4,10 +4,10 @@ import imgUrl from "./images/vizArc-bg.png";
 
 const About = () => (
   <header>
-    <div class="header-wrapper">
+    <div className="header-wrapper">
   <h1>The Experimental Project Lab</h1><h1>of Raymond Norman</h1>
   <img src={require("./images/rn-150-image.png")} alt="Raymond Norman" />
-  <div class="demo-list">
+  <div className="demo-list">
       <ul>
         <li><a href="https://youtube.com/layoutland">Layout Land videos</a></li>
         <li><a href="http://layout.land">Layout Land website</a></li> 
@@ -20,8 +20,8 @@ const About = () => (
       <li><a href="../2017/workshop">Workshop Examples</a></li>
       </ul>
   </div>
-  <p class="follow-links">Follow <a href="#">@raymondnorman</a> on Twitter for more as it happens.<br/>Contact me at <a href="#">email</a>.</p>
-  <div class="workshop-link">
+  <p className="follow-links">Follow <a href="#">@raymondnorman</a> on Twitter for more as it happens.<br/>Contact me at <a href="#">email</a>.</p>
+  <div className="workshop-link">
     <ul>           
       <li><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Firefox Grid Inspector</a></li>
       <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">Firefox Shape Path Editor</a></li>
