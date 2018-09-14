@@ -1,13 +1,9 @@
-/* colors */
-:root {
-  --text: rgba(12, 12, 10, 0.8);
-}
 * { box-sizing: border-box; }
 body { margin: 0; }
 html {
   font-family: 'futura-pt', helvetica, san-serif;
   font-size: 100%;
-  color: var(--text);
+  color: #3c3b37;
   font-weight: 400;
 }
 img {
@@ -32,7 +28,7 @@ h4 {
 	line-height: 1.2;
 }
 a {
-  color: var(--text);
+  color: #3c3b37;
   text-decoration: none;
 }
 a:hover {
@@ -118,12 +114,12 @@ header > a {
   }
   p {
     margin: 0;
-    color: var(--text);
+    color: #3c3b37;
   }
   a {
     border-bottom: none;
     text-transform: uppercase;
-    color: var(--text);
+    color: #3c3b37;
     font-weight: 700;
   }
   .demo-list { 
@@ -134,12 +130,12 @@ header > a {
     align-self: end;
   }
   .demo-list > li {
-    border-top: 5px solid var(--text);
+    border-top: 5px solid #3c3b37;
     text-align: left;
     padding: 2px 0;
   }
   .demo-list > li:last-child {
-    border-bottom: 5px solid var(--text);
+    border-bottom: 5px solid #3c3b37;
   }
   .demo-list > p {
     padding: 2px 0;
@@ -157,8 +153,8 @@ header > a {
     font-weight: 400;
   }
   .workshop-link { 
-    border-top: 5px solid var(--text);
-    border-bottom: 5px solid var(--text);
+    border-top: 5px solid #3c3b37;
+    border-bottom: 5px solid #3c3b37;
     font-weight: 700;
     grid-row: 3;
     grid-column: 4 / 6;
@@ -278,10 +274,10 @@ main > section > ul.demo-list > li > p {
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
-  color: lighten(var(--text), 50%);
+  color: lighten(#3c3b37, 50%);
 }
 main > section > ul.demo-list > li > a {
-  color: lighten(var(--text), 50%);
+  color: lighten(#3c3b37, 50%);
 }
 main > section > ul.demo-list > li > a::before {
   content:'[';
@@ -296,7 +292,7 @@ main > section > img {
 }
 main > section > footer {
   display: flex;
-  color: lighten(var(--text), 50%);
+  color: lighten(#3c3b37, 50%);
   font-size: 0.85rem;
 }
 main > section > footer > div {
@@ -337,7 +333,7 @@ section:nth-child(odd) {
   border-bottom: 1px dotted #9C9C9C;
 }
 main > footer {  
-  background: darken(var(--text), 5%);
+  background: darken(#3c3b37, 5%);
   color: #fff;
   padding: 3rem;
 }
