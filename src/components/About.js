@@ -1,6 +1,5 @@
 import React from "react";
 
-import imgUrl from "./images/vizArc-bg.png";
 
 const About = () => (
   <header>
