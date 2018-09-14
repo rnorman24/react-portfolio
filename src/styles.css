@@ -129,16 +129,13 @@ header > a {
     line-height: 1.2;
     align-self: end;
   }
-  .demo-list > li {
+  .demo-list > ul > li {
     border-top: 5px solid #3c3b37;
     text-align: left;
     padding: 2px 0;
   }
-  .demo-list > li:last-child {
+  .demo-list > ul > li:last-child {
     border-bottom: 5px solid #3c3b37;
-  }
-  .demo-list > p {
-    padding: 2px 0;
   }
 
   .follow-links { 
