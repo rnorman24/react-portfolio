@@ -2,8 +2,6 @@
 :root {
   --red: rgba(249, 66, 58, 1);
   --text: rgba(12, 12, 10, 0.8);
-  --background: #f6f3ea;
-  --page-margin: 5vw;
 }
 * { box-sizing: border-box; }
 body { margin: 0; }
@@ -61,9 +59,9 @@ ol {
 
 
 header {  
-  background: var(--background);
+  background: #f6f3ea;
   min-height: 100vh;
-  padding: 5rem var(--page-margin) 2rem;
+  padding: 5rem 5vw 2rem;
 } 
 header >  h1 {
   font-size: calc(1.3rem + 1.8vw);
@@ -237,7 +235,7 @@ header > a {
 nav,
 .bar {
   background: var(--red);
-  padding: 1.04rem var(--page-margin) 0.9rem calc(5vw + 1.2rem);
+  padding: 1.04rem 5vw 0.9rem calc(5vw + 1.2rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -256,7 +254,7 @@ nav,
 
 
 main > section {
-  padding: 4rem var(--page-margin) 3rem;
+  padding: 4rem 5vw 3rem;
 }
 main > section > h3 {
   font-size: 1.2rem;
