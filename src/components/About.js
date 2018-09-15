@@ -70,8 +70,8 @@ const About = () => (
 
 export default About;
 
-{
-  /*  <header
+/* {
+  <header
   className="masthead text-center text-white"
   style={{
     backgroundImage: "url(" + imgUrl + ")",
@@ -93,4 +93,3 @@ export default About;
     Find Out More
   </a>
 </header> */
-}
