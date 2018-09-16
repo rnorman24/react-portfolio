@@ -58,7 +58,7 @@ header {
   min-height: 100vh;
   padding: 5rem 5vw 2rem;
 } 
-header >  h1 {
+header > h1 {
   font-size: calc(1.3rem + 1.8vw);
   margin: 0;
   line-height: 1.2em;

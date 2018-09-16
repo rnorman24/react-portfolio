@@ -5,7 +5,9 @@ const header = css({
   display: 'flex',
   margin: 'auto',
   paddingTop: '1rem',
-  paddingBottom: '12rem'
+  paddingBottom: '12rem',
+  background: '#f6f3ea',
+  minHeight: '100vh'
 })
 
 const About = () => (
