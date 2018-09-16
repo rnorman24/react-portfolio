@@ -5,7 +5,9 @@ const header = css({
   display: 'flex',
   margin: 'auto',
   paddingTop: '1rem',
+  paddingRight:'5vw',
   paddingBottom: '12rem',
+  paddingLeft: '5vw',
   background: '#f6f3ea',
   minHeight: '100vh'
 })
