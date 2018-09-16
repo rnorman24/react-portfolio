@@ -1,7 +1,15 @@
 import React from "react";
+import { css } from 'emotion';
+
+const header = css({
+  display: 'flex',
+  margin: 'auto',
+  paddingTop: '1rem',
+  paddingBottom: '12rem'
+})
 
 const About = () => (
-  <header>
+  <header className={header}>
     <div className="header-wrapper">
       <h1>The Experimental Project Lab</h1>
       <h1>of Raymond Norman</h1>
