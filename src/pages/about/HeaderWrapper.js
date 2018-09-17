@@ -1,7 +1,7 @@
 import React from "react";
-import styled, { css } from "react-emotion";
+import styled from "react-emotion";
 
-const HeaderWrapper = styled("div")(
+const HeaderGrid = styled("div")(
   props => ({
     background: props.theme.bgColor
   }),
@@ -16,7 +16,7 @@ const HeaderWrapper = styled("div")(
   }
 );
 
-const H1nth1 = styled('h1:nth-child(1)')(
+const H1nth1 = styled('h1')(
   {
     gridColumn: '1 / 4',
     textAlign: 'right',
@@ -26,7 +26,7 @@ const H1nth1 = styled('h1:nth-child(1)')(
   }
 )
 
-const H1nth2 = styled('h1:nth-child(2)')(
+const H1nth2 = styled('h1')(
     props => ({
       color: props.theme.red
     }),
@@ -42,12 +42,11 @@ const H1nth2 = styled('h1:nth-child(2)')(
     }
 );
 
-
 const HeaderWrapper = () => (
-  <HeaderWrapper>
+  <HeaderGrid>
       <H1nth1>The Experimental Project Lab</H1nth1>
       <H1nth2>of Raymond Norman</H1nth2>
-      <img src={require("../images/rn-150-image.png")} alt="Raymond Norman" />
+      <img src={require("../../images/rn-150-image.png")} alt="Raymond Norman" />
       <div className="demo-list">
         <ul>
           <li>
@@ -107,7 +106,7 @@ const HeaderWrapper = () => (
         </ul>
       </div>
     
-  </HeaderWrapper>
+  </HeaderGrid>
 );
 
 export default HeaderWrapper;
