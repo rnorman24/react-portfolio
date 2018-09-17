@@ -1,22 +1,27 @@
 import React from "react";
-import { css } from 'emotion';
+import styled, { css } from "react-emotion";
 
-const header = css({
-  display: 'flex',
-  margin: 'auto',
-  paddingTop: '1rem',
-  paddingRight:'5vw',
-  paddingBottom: '12rem',
-  paddingLeft: '5vw',
-  background: '#f6f3ea',
-  minHeight: '100vh'
-})
+const Header = styled("header")(
+  props => ({
+    background: props.theme.bgColor
+  }),
+  {
+    minHeight: "100vh",
+    padding: "5rem 5vw 2rem"
+  }
+);
+
+const h1 = css({
+  fontSize: "calc(1.3rem + 1.8vw)",
+  margin: 0,
+  lineHeight: "1.2rem"
+});
 
 const About = () => (
-  <header className={header}>
-    <div className="header-wrapper">
-      <h1>The Experimental Project Lab</h1>
-      <h1>of Raymond Norman</h1>
+  <Header>
+    <div className="headerWrapper">
+      <h1 className={h1}>The Experimental Project Lab</h1>
+      <h1 className={h1}>of Raymond Norman</h1>
       <img src={require("./images/rn-150-image.png")} alt="Raymond Norman" />
       <div className="demo-list">
         <ul>
@@ -77,7 +82,7 @@ const About = () => (
         </ul>
       </div>
     </div>
-  </header>
+  </Header>
 );
 
 export default About;

@@ -1,13 +1,19 @@
 import React, { Component } from "react";
+import { ThemeProvider } from "emotion-theming";
+
 import About from "./components/About.js";
+import Global from "./injectGlobals";
+import { theme } from "./theme.js";
 /* import PortfolioProject from "./components/PortfolioProject"; */
 
 class App extends Component {
   render() {
     return (
-      <div className="App Grid">
-        <About />
-      </div>
+      <ThemeProvider theme={theme}>
+        <Global>
+          <About />
+        </Global>
+      </ThemeProvider>
     );
   }
 }
