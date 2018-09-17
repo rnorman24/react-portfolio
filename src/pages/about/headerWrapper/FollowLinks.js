@@ -4,26 +4,14 @@ import styled from "react-emotion";
 const FollowLinkStyle = styled("p")({
   gridColumn: "3 / 6",
   gridRow: "5",
-  fontSize: '0.9rem',
-  borderBottom: '25px solid #f9423a',
-  alignSelf: 'start',
-  justifyContent: 'end',
+  fontSize: "0.9rem",
+  borderBottom: "25px solid #f9423a",
+  alignSelf: "start",
+  justifyContent: "end",
   lineHeight: "1.3",
   paddingBottom: 5,
   fontWeight: "400"
 });
-
-const DemoUl = styled("ul")({
-  margin: 0
-});
-
-const DemoLi = styled("li")(
-  {
-    borderTop: '5px solid #3c3b37',
-    textAlign: 'left',
-    padding: '2px 0'
-  }
-);
 
 const FollowLinks = () => (
   <FollowLinkStyle>
