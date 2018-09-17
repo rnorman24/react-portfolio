@@ -14,12 +14,10 @@ const DemoUl = styled("ul")({
 });
 
 const DemoLi = styled("li")(
-  props => ({
-    borderTop: '5 solid' `${props.theme.textColor}`
-  }),
   {
+    borderTop: '5px solid #3c3b37',
     textAlign: 'left',
-    padding: '2 0'
+    padding: '2px 0'
   }
 );
 
