@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "emotion-theming";
 
-import About from "./components/About.js";
+import About from "./pages/About.js";
 import Global from "./injectGlobals";
 import { theme } from "./theme.js";
 /* import PortfolioProject from "./components/PortfolioProject"; */
