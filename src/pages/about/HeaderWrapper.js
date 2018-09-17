@@ -7,10 +7,12 @@ const HeaderWrapper = styled("div")(
   }),
   {
     width: '66vw',
-    display: 'flex',
+    display: 'grid',
     margin: 'auto',
-    padding: '1rem 5vw 12rem',
-    minHeight: "100vh"    
+    gridTemplateColumns: 'auto 1fr 1fr 1fr 0.5fr',
+    gridTemplateRows: "auto 1fr 1fr auto auto",
+    gridGap: '1rem',
+    transform: 'rotate(-45deg)'    
   }
 );
 
