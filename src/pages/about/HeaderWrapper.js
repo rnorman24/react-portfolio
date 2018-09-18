@@ -25,7 +25,7 @@ const HeaderGrid = styled("div")(
     display: 'grid',
     margin: 'auto',
     gridTemplateColumns: 'auto 1fr 1fr 1fr 0.5fr',
-    gridTemplateRows: "auto 1fr 1fr auto auto",
+    gridTemplateRows: "auto 1fr auto auto auto",
     gridGap: '1rem',
     transform: 'rotate(-45deg)',
     [mqMax[2]]: {

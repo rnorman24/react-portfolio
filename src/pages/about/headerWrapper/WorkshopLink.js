@@ -12,6 +12,10 @@ const WorkshopStyle = styled("div")({
   gridRow: "3",
   fontWeight: "700",
   alignSelf: "end",
+  [mqMax[2]]: {
+    alignSelf: 'start',
+    marginLeft: '1rem'
+  },
   borderTop: '5px solid #3c3b37',
   borderBottom: '5px solid #3c3b37'
 });

@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "react-emotion";
 
+const breakpoints = [500, 700, 820];
+
+const mqMax = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+);
+
 const FollowLinkStyle = styled("p")(
   props => ({
     color: props.theme.textColor
