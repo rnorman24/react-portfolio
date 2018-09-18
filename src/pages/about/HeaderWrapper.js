@@ -22,6 +22,9 @@ const HeaderGrid = styled("div")(
 );
 
 const H1nth1 = styled('h1')(
+  props => ({
+    color: props.theme.textColor
+  }),
   {
     gridColumn: '1 / 4',
     textAlign: 'right',
@@ -43,7 +46,7 @@ const H1nth2 = styled('h1')(
       marginTop: -10,
       marginRight: -10,
       fontSize: "calc(1.3rem + 1.8vw)",
-      lineHeight: "1.2rem"
+      lineHeight: "1.2em"
     }
 );
 
