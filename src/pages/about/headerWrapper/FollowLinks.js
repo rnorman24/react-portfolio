@@ -37,7 +37,7 @@ const FollowLinks = () => (
   <FollowLinkStyle>
     Follow <a href="#">@raymondnorman</a> on Twitter for more as it happens.
     <br />
-    Contact me at <a href="#">email</a>.
+    Contact me at <a href="#">nray24@gmail.com</a>.
   </FollowLinkStyle>
 );
 
