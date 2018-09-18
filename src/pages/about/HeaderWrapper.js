@@ -40,6 +40,9 @@ const H1nth1 = styled('h1')(
   }),
   {
     gridColumn: '1 / 4',
+    [mqMax[0]]: {
+      gridColumn: '1 / -1'
+    },
     textAlign: 'right',
     fontSize: "calc(1.3rem + 1.8vw)",
     margin: 0,
