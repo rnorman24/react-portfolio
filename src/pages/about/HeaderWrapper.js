@@ -6,6 +6,16 @@ import FollowLinks from "./headerWrapper/FollowLinks";
 import WorkshopLink from './headerWrapper/WorkshopLink';
 import Image from './headerWrapper/Image';
 
+const breakpoints = [500, 700, 820, 1000, 1300, 1800];
+
+const mqMax = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+);
+
+const mqMin = breakpoints.map(
+  bp => `@media (min-width: ${bp}px)`
+);
+
 const HeaderGrid = styled("div")(
   props => ({
     background: props.theme.bgColor
@@ -17,7 +27,10 @@ const HeaderGrid = styled("div")(
     gridTemplateColumns: 'auto 1fr 1fr 1fr 0.5fr',
     gridTemplateRows: "auto 1fr 1fr auto auto",
     gridGap: '1rem',
-    transform: 'rotate(-45deg)'    
+    transform: 'rotate(-45deg)',
+    [mqMax[2]]: {
+      transform: 'rotate(0deg)'
+    }    
   }
 );
 
@@ -44,7 +57,10 @@ const H1nth2 = styled('h1')(
       gridRow: '2 / 5',
       justifySelf: 'end',
       marginTop: -10,
-      marginRight: -10,
+      [mqMax[2]]: {
+        marginTop: -5
+      },    
+        marginRight: -10,
       fontSize: "calc(1.3rem + 1.8vw)",
       lineHeight: "1.2em"
     }
