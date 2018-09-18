@@ -1,9 +1,19 @@
 import React from "react";
 import styled from "react-emotion";
 
+const breakpoints = [500, 700, 820];
+
+const mqMax = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+);
+
 const DemoStyle = styled("div")({
   gridColumn: "1 / 3",
   gridRow: "4 / span 2",
+  [mqMax[1]]: {
+    gridColumn: '3 / -1',
+    gridRow: '6'
+  },
   fontWeight: "700",
   lineHeight: "1.2",
   alignSelf: "end"
