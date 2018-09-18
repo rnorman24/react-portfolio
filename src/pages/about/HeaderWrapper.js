@@ -6,14 +6,10 @@ import FollowLinks from "./headerWrapper/FollowLinks";
 import WorkshopLink from './headerWrapper/WorkshopLink';
 import Image from './headerWrapper/Image';
 
-const breakpoints = [500, 700, 820, 1000, 1300, 1800];
+const breakpoints = [500, 700, 820];
 
 const mqMax = breakpoints.map(
   bp => `@media (max-width: ${bp}px)`
-);
-
-const mqMin = breakpoints.map(
-  bp => `@media (min-width: ${bp}px)`
 );
 
 const HeaderGrid = styled("div")(
@@ -30,6 +26,10 @@ const HeaderGrid = styled("div")(
     transform: 'rotate(-45deg)',
     [mqMax[2]]: {
       transform: 'rotate(0deg)'
+    },
+    [mqMax[0]]: {
+      gridTemplateColumns: 'auto 1fr 1fr 1fr 0.5fr',
+      gridTemplateRows: 'auto auto auto auto'
     }    
   }
 );
