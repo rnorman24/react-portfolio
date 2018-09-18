@@ -16,6 +16,9 @@ const FollowLinkStyle = styled("p")(
     gridRow: "5",
     fontSize: "0.9rem",
     borderBottom: "25px solid #f9423a",
+    [mqMax[2]]: {
+      borderBottom: '20px solid #f9423a'
+    },
     alignSelf: "start",
     justifyContent: "end",
     lineHeight: "1.3",
