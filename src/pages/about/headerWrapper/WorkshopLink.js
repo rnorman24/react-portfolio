@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "react-emotion";
 
+const breakpoints = [500, 700, 820, 1000, 1300, 1800];
+
+const mqMax = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+);
+
+const mqMin = breakpoints.map(
+  bp => `@media (min-width: ${bp}px)`
+);
+
 const WorkshopStyle = styled("div")({
   gridColumn: "4 / 6",
   gridRow: "3",
