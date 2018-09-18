@@ -2,6 +2,9 @@ import React from "react";
 import styled from "react-emotion";
 
 import DemoList from './headerWrapper/DemoList';
+import FollowLinks from "./headerWrapper/FollowLinks";
+import WorkshopLink from './headerWrapper/WorkshopLink';
+import Image from './headerWrapper/Image';
 
 const HeaderGrid = styled("div")(
   props => ({
@@ -24,7 +27,7 @@ const H1nth1 = styled('h1')(
     textAlign: 'right',
     fontSize: "calc(1.3rem + 1.8vw)",
     margin: 0,
-    lineHeight: "1.2rem"
+    lineHeight: "1.2em"
   }
 )
 
@@ -48,8 +51,10 @@ const HeaderWrapper = () => (
   <HeaderGrid>
       <H1nth1>The Experimental Project Lab</H1nth1>
       <H1nth2>of Raymond Norman</H1nth2>
-      <img src={require("../../images/rn-150-image.png")} alt="Raymond Norman" />
+      <Image src={require("../../images/rn-150-image.png")} alt="Raymond Norman" />
       <DemoList />
+      <FollowLinks />
+      <WorkshopLink />
   </HeaderGrid>
 );
 
