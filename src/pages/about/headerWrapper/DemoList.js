@@ -21,6 +21,10 @@ const DemoLi = styled("li")(
   }
 );
 
+const BorderBottomStyle = {
+  borderBottom: '5px solid #3c3b37'
+}
+
 const DemoList = () => (
   <DemoStyle>
     <DemoUl>
@@ -53,7 +57,7 @@ const DemoList = () => (
       <DemoLi>
         <a href="http://jensimmons.com">jensimmons.com</a>
       </DemoLi>
-      <DemoLi>
+      <DemoLi style={BorderBottomStyle}>
         <a href="../2017/workshop">Workshop Examples</a>
       </DemoLi>
     </DemoUl>
