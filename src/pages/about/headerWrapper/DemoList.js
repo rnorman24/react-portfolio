@@ -10,13 +10,17 @@ const mqMax = breakpoints.map(
 const DemoStyle = styled("div")({
   gridColumn: "1 / 3",
   gridRow: "4 / span 2",
+  fontWeight: "700",
+  lineHeight: "1.2",
+  alignSelf: "end",
   [mqMax[1]]: {
     gridColumn: '3 / -1',
     gridRow: '6'
   },
-  fontWeight: "700",
-  lineHeight: "1.2",
-  alignSelf: "end"
+  [mqMax[0]]: {
+    gridColumn: '1 / -1',
+    gridRow: '4'
+  }
 });
 
 const DemoUl = styled("ul")({
