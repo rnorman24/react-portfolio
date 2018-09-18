@@ -9,7 +9,7 @@ const ImageStyle = styled('img')(
 )
 
 const Image = () => (
-  <ImageStyle src={require("../../../images/rn-150-image.png")} alt="Raymond Norman" />
+  <ImageStyle src={require("../../../images/rn-150-bwi-image.png")} alt="Raymond Norman" />
 )
 
 export default Image;
