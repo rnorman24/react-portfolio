@@ -43,7 +43,7 @@ const DemoList = () => (
   <DemoStyle>
     <DemoUl>
       <DemoLi>
-        <a href="https://youtube.com/layoutland">Layout Land videos</a>
+        <a href="https://guarded-peak-20346.herokuapp.com/">Beer Label Search Project</a>
       </DemoLi>
       <DemoLi>
         <a href="http://layout.land">Layout Land website</a>
