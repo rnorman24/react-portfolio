@@ -46,11 +46,11 @@ const DemoList = () => (
         <a href="https://guarded-peak-20346.herokuapp.com/">Beer Label Search Project</a>
       </DemoLi>
       <DemoLi>
-        <a href="http://layout.land">Layout Land website</a>
+        <a href="https://salty-taiga-65994.herokuapp.com/">Friend Finder Project</a>
       </DemoLi>
       <DemoLi>
-        <a href="http://jensimmons.com/post/feb-27-2017/learn-css-grid">
-          Learn how to use CSS Grid
+        <a href="https://github.com/rnorman24/bamazon">
+          bamazon MySQL Project
         </a>
       </DemoLi>
       <DemoLi>

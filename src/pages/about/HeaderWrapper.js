@@ -80,7 +80,7 @@ const H1nth2 = styled('h1')(
 
 const HeaderWrapper = () => (
   <HeaderGrid>
-      <H1nth1>The Experimental Project Lab</H1nth1>
+      <H1nth1>The Experimental Projects Lab</H1nth1>
       <H1nth2>of Raymond Norman</H1nth2>
       <Image src={require("../../images/rn-150-image.png")} alt="Raymond Norman" />
       <DemoList />
