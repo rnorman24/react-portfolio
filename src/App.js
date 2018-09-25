@@ -4,7 +4,6 @@ import { ThemeProvider } from "emotion-theming";
 import Home from "./pages/Home";
 import Global from "./injectGlobals";
 import { theme } from "./theme";
-/* import PortfolioProject from "./components/PortfolioProject"; */
 
 class App extends Component {
   render() {
