@@ -7,7 +7,7 @@ const mqMax = breakpoints.map(
   bp => `@media (max-width: ${bp}px)`
 );
 
-const WorkshopStyle = styled("div")({
+const ItemContainer = styled("div")({
   gridColumn: "4 / 6",
   gridRow: "3",
   fontWeight: "700",
@@ -42,7 +42,7 @@ const WorkshopA = styled("a")({
 });
 
 const ItemLinks = () => (
-  <WorkshopStyle>
+  <ItemContainer>
     <WorkshopUl>
       <WorkshopLi>
         <WorkshopA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
@@ -58,7 +58,7 @@ const ItemLinks = () => (
         <WorkshopA href="http://nightly.mozilla.org">Firefox Nightly</WorkshopA>
       </WorkshopLi>
     </WorkshopUl>
-  </WorkshopStyle>
+  </ItemContainer>
 );
 
 export default ItemLinks;
