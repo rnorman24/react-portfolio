@@ -29,7 +29,7 @@ const ItemUl = styled("ul")({
   margin: 0
 });
 
-const WorkshopLi = styled("li")({
+const ItemLi = styled("li")({
   textAlign: "left",
   padding: "2px 0"
 });
@@ -44,19 +44,19 @@ const WorkshopA = styled("a")({
 const ItemLinks = () => (
   <ItemContainer>
     <ItemUl>
-      <WorkshopLi>
+      <ItemLi>
         <WorkshopA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
           Firefox Grid Inspector
         </WorkshopA>
-      </WorkshopLi>
-      <WorkshopLi>
+      </ItemLi>
+      <ItemLi>
         <WorkshopA href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">
           Firefox Shape Path Editor
         </WorkshopA>
-      </WorkshopLi>
-      <WorkshopLi>
+      </ItemLi>
+      <ItemLi>
         <WorkshopA href="http://nightly.mozilla.org">Firefox Nightly</WorkshopA>
-      </WorkshopLi>
+      </ItemLi>
     </ItemUl>
   </ItemContainer>
 );
