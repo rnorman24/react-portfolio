@@ -25,7 +25,7 @@ const ItemContainer = styled("div")({
   }
 });
 
-const WorkshopUl = styled("ul")({
+const ItemUl = styled("ul")({
   margin: 0
 });
 
@@ -43,7 +43,7 @@ const WorkshopA = styled("a")({
 
 const ItemLinks = () => (
   <ItemContainer>
-    <WorkshopUl>
+    <ItemUl>
       <WorkshopLi>
         <WorkshopA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
           Firefox Grid Inspector
@@ -57,7 +57,7 @@ const ItemLinks = () => (
       <WorkshopLi>
         <WorkshopA href="http://nightly.mozilla.org">Firefox Nightly</WorkshopA>
       </WorkshopLi>
-    </WorkshopUl>
+    </ItemUl>
   </ItemContainer>
 );
 
