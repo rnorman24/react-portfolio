@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "emotion-theming";
 
-import About from "./pages/About.js";
+import Home from "./pages/Home";
 import Global from "./injectGlobals";
-import { theme } from "./theme.js";
+import { theme } from "./theme";
 /* import PortfolioProject from "./components/PortfolioProject"; */
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <Global>
-          <About />
+          <Home />
         </Global>
       </ThemeProvider>
     );

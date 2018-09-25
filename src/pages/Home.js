@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
-import HeaderWrapper from "./about/HeaderWrapper";
+import HeaderWrapper from "./home/HeaderWrapper";
 
 const breakpoints = [500, 700, 820, 1000, 1300, 1800];
 
@@ -37,13 +37,13 @@ const Header = styled("header")(
   }
 );
 
-const About = () => (
+const Home = () => (
   <Header>
     <HeaderWrapper />
   </Header>
 );
 
-export default About;
+export default Home;
 
 /* {
   <header

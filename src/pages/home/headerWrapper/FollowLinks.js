@@ -29,13 +29,18 @@ const FollowLinkStyle = styled("p")(
       gridColumn: '1 / 4',
       gridRow: '3',
       borderBottom: '10px solid #f9423a'
+    },
+    span: {
+      display: 'flex'
     }
+    
   }
 );
 
 const FollowLinks = () => (
   <FollowLinkStyle>
-    Follow <a href="#">@raymondnorman</a> on Twitter for more as it happens.
+    
+    Check out my <a href="https://github.com/rnorman24/"><span><img src={require("./github-32.png")} class="social" alt="GitHub" /></span>GitHub</a> page.
     <br />
     Contact me at <a href="#">nray24@gmail.com</a>.
   </FollowLinkStyle>
