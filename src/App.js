@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "emotion-theming";
 
 import Home from "./pages/Home";
