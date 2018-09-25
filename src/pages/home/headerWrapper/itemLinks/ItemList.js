@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'react-emotion';
+import React from "react";
+import styled from "react-emotion";
 
 const ItemUl = styled("ul")({
   margin: 0
@@ -19,20 +19,20 @@ const ItemA = styled("a")({
 
 const ItemList = () => (
   <ItemUl>
-  <ItemLi>
-    <ItemA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
-      Firefox Grid Inspector
-    </ItemA>
-  </ItemLi>
-  <ItemLi>
-    <ItemA href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">
-      Firefox Shape Path Editor
-    </ItemA>
-  </ItemLi>
-  <ItemLi>
-    <ItemA href="http://nightly.mozilla.org">Firefox Nightly</ItemA>
-  </ItemLi>
-</ItemUl>
+    <ItemLi>
+      <ItemA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
+        Firefox Grid Inspector
+      </ItemA>
+    </ItemLi>
+    <ItemLi>
+      <ItemA href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">
+        Firefox Shape Path Editor
+      </ItemA>
+    </ItemLi>
+    <ItemLi>
+      <ItemA href="http://nightly.mozilla.org">Firefox Nightly</ItemA>
+    </ItemLi>
+  </ItemUl>
 );
 
 export default ItemList;
