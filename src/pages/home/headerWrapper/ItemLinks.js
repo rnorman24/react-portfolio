@@ -41,7 +41,7 @@ const WorkshopA = styled("a")({
   fontWeight: "700"
 });
 
-const WorkshopLink = () => (
+const ItemLinks = () => (
   <WorkshopStyle>
     <WorkshopUl>
       <WorkshopLi>
@@ -61,4 +61,4 @@ const WorkshopLink = () => (
   </WorkshopStyle>
 );
 
-export default WorkshopLink;
+export default ItemLinks;
