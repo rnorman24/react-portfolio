@@ -10,7 +10,7 @@ const ItemLi = styled("li")({
   padding: "2px 0"
 });
 
-const WorkshopA = styled("a")({
+const ItemA = styled("a")({
   borderBottom: "none",
   textTransform: "uppercase",
   color: "#3c3b37",
@@ -20,17 +20,17 @@ const WorkshopA = styled("a")({
 const ItemList = () => (
   <ItemUl>
   <ItemLi>
-    <WorkshopA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
+    <ItemA href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">
       Firefox Grid Inspector
-    </WorkshopA>
+    </ItemA>
   </ItemLi>
   <ItemLi>
-    <WorkshopA href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">
+    <ItemA href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">
       Firefox Shape Path Editor
-    </WorkshopA>
+    </ItemA>
   </ItemLi>
   <ItemLi>
-    <WorkshopA href="http://nightly.mozilla.org">Firefox Nightly</WorkshopA>
+    <ItemA href="http://nightly.mozilla.org">Firefox Nightly</ItemA>
   </ItemLi>
 </ItemUl>
 );
