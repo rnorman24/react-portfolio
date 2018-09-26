@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-const AboutH = styled('div')({
-  fontWeight: '700'
+const AboutH = styled('h1')({
+  fontWeight: '700',
+    p: {
+      color: '#00a3ff'
+    }
 })
 
 const About = () => (
 <AboutH>
-  <h1>About</h1>
+  <p>About</p>
 </AboutH>
     
   

@@ -9,16 +9,14 @@ import { theme } from "./theme";
 
 const App = () => (
   <Router>
-    <div>
-      <ThemeProvider theme={theme}>
-        <Global>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-          </Switch>
-        </Global>
-      </ThemeProvider>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Global>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </Global>
+    </ThemeProvider>
   </Router>
 );
 
