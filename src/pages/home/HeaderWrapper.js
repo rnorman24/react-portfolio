@@ -60,19 +60,19 @@ const H1nth2 = styled("h1")(
     writingMode: "vertical-lr",
     gridColumn: "3 / 4",
     gridRow: "2 / 5",
+    justifySelf: "end",
+    marginTop: -10,
+    marginRight: -10,
+    fontSize: "calc(1.3rem + 1.8vw)",
+    lineHeight: "1.2em",
     [mqMax[0]]: {
       gridColumn: "5",
       gridRow: "2 / 4",
       marginRight: -5
     },
-    justifySelf: "end",
-    marginTop: -10,
     [mqMax[2]]: {
       marginTop: -5
-    },
-    marginRight: -10,
-    fontSize: "calc(1.3rem + 1.8vw)",
-    lineHeight: "1.2em"
+    }
   }
 );
 

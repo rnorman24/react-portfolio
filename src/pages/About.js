@@ -2,26 +2,25 @@ import React from "react";
 import styled from "react-emotion";
 import Link from "../../node_modules/react-router-dom/Link";
 
-const Main = styled("main")({
-  margin: "4rem",
+const Main = styled('main')({
+  display: 'flex',
+  minHeight: '100vh',
+  margin: 'auto',
+  padding: "1rem 5vw 12rem"
+});
+
+const Section = styled("section")({
+  margin: "auto",
   display: "grid",
-  gridTemplateColumns: "100px 1fr 1fr minmax(40ch, 65ch) 1fr",
+  gridTemplateColumns: "minmax(min-content, 1fr) 1fr 1fr minmax(30ch, 65ch) 1fr",
   gridTemplateRows: "min-content 4rem 8rem auto",
   gridGap: "1rem",
   fontSize: "1.3rem",
   fontWeight: "300",
   textRendering: "optimizeLegibility",
   fontKerning: "normal",
-  color: "#00a3ff",
-
-  h1: {
-    gridRow: "1",
-    gridColumn: "3 / 6",
-    margin: 0,
-    fontSize: "3.6rem",
-    lineHeight: "1.1",
-    fontFamily: "'Voces', cursive",
-    textTransform: "none"
+  a: {
+    gridColumn: '2'
   }
 });
 
@@ -38,10 +37,35 @@ const Article = styled("article")({
   }
 });
 
+const H1nth1 = styled('h1')({
+  gridRow: "1",
+  gridColumn: "3 / 6",
+  margin: 0,
+  fontSize: "3.6rem",
+  lineHeight: "1.1",
+  fontFamily: "'Voces', cursive",
+  textTransform: "none"
+})
+
+const H1nth2 = styled('h1')({
+  writingMode: "vertical-rl",
+  gridRow: '2 / 5',
+  gridColumn: '3 / 4',
+  justifySelf: "end",
+  marginTop: -10,
+  marginRight: -10,
+  fontSize: "calc(0.5rem + 1.8vw)",
+  lineHeight: "0.8em",
+  color: '#00a3ff',
+  textTransform: 'none'
+})
+
 const About = () => (
   <Main>
+    <Section>
     <Link to="/">Home</Link>
-    <h1>About Raymond Norman</h1>
+    <H1nth1>About</H1nth1>
+    <H1nth2>Raymond Norman</H1nth2>
     <Article>
       <img
         src={require("../images/rn-160-bwi-image.png")}
@@ -60,6 +84,7 @@ const About = () => (
         accumsan auctor a, molestie id neque. Maecenas quis lobortis augue.
       </p>
     </Article>
+    </Section>
   </Main>
 );
 
