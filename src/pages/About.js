@@ -2,11 +2,18 @@ import React from "react";
 import styled from "react-emotion";
 import Link from "../../node_modules/react-router-dom/Link";
 
+const breakpoints = [500, 700, 820];
+
+const mqMax = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
+
 const Main = styled('main')({
   display: 'flex',
   minHeight: '100vh',
   margin: 'auto',
-  padding: "1rem 5vw 12rem"
+  padding: "1rem 5vw 12rem",
+  [mqMax[0]]: {
+    padding: 0
+  }
 });
 
 const Section = styled("section")({
@@ -20,7 +27,10 @@ const Section = styled("section")({
   textRendering: "optimizeLegibility",
   fontKerning: "normal",
   a: {
-    gridColumn: '2'
+    gridColumn: '2',
+    [mqMax[0]]: {
+      writingMode: "vertical-rl"
+    }
   }
 });
 
@@ -33,7 +43,8 @@ const Article = styled("article")({
     clipPath: 'ellipse(50% 50%)',
     shapeOutside: 'ellipse()',
     float: 'left',
-    margin: '1rem'
+    margin: '1rem',
+    maxWidth: '100%'
   }
 });
 
@@ -72,17 +83,10 @@ const About = () => (
         alt="Raymond Norman"
       />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        pulvinar ligula a orci vestibulum, sed iaculis orci posuere. Proin
-        ornare orci non magna finibus luctus. Nulla facilisi. Sed a sollicitudin
-        elit, id feugiat leo. Proin in justo imperdiet, pellentesque dolor quis,
-        posuere justo. Duis cursus, ligula auctor volutpat fringilla, lacus
-        felis porttitor urna, vel volutpat libero risus eget lectus. Nunc
-        rhoncus in sapien vel fringilla. Vestibulum rutrum quis dui vitae
-        viverra. Suspendisse non mauris quis lacus faucibus placerat. Duis vitae
-        iaculis tortor. In quis efficitur risus. Duis sem libero, elementum
-        accumsan auctor a, molestie id neque. Maecenas quis lobortis augue.
+      I'm a Full Stack Developer with a mission for improving the human condition through better design and function. I've participated in various roles from individual contributoer to team lead and business owner for a variety companies in terms of size and purpose. As a result  of these various life experiences to draw from I've become a lifelong learner and experimenter with an eye on what is possible. 
       </p>
+      <h3>Technical Skills</h3>
+      <p>A six-month intensive certificate program focusing on: HTML5, CSS3, CSS Grid, Bootstrap, JavaScript, jQuery, Responsive Design, Node.js, Express.js, MySQL, MongoDB, React.js, Git, Heroku, Test Driven Development, User Authentication, and Computer Science Fundamentals.</p>
     </Article>
     </Section>
   </Main>
