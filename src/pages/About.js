@@ -52,7 +52,7 @@ const H1nth1 = styled('h1')({
   gridRow: "1",
   gridColumn: "3 / 6",
   margin: 0,
-  fontSize: "3.6rem",
+  fontSize: "calc(1.7rem + 1.8vw)",
   lineHeight: "1.1",
   fontFamily: "'Voces', cursive",
   textTransform: "none"
@@ -83,7 +83,7 @@ const About = () => (
         alt="Raymond Norman"
       />
       <p>
-      I'm a Full Stack Developer with a mission for improving the human condition through better design and function. I've participated in various roles from individual contributoer to team lead and business owner for a variety companies in terms of size and purpose. As a result  of these various life experiences to draw from I've become a lifelong learner and experimenter with an eye on what is possible. 
+      I'm a Full Stack Developer with a mission for improving web development through better design and function. I've participated in various roles from individual contributor to team lead and business owner for a variety companies in terms of size and purpose. As a result  of these various life experiences to draw from I've become a lifelong learner and experimenter with an eye on what is possible. 
       </p>
       <h3>Technical Skills</h3>
       <p>A six-month intensive certificate program focusing on: HTML5, CSS3, CSS Grid, Bootstrap, JavaScript, jQuery, Responsive Design, Node.js, Express.js, MySQL, MongoDB, React.js, Git, Heroku, Test Driven Development, User Authentication, and Computer Science Fundamentals.</p>
