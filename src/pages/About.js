@@ -6,7 +6,11 @@ const breakpoints = [500, 700, 820];
 
 const mqMax = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
 
-const Main = styled('main')({
+const Main = styled('main')(
+  props => ({
+    background: props.theme.bgColor
+  }),
+  {
   display: 'flex',
   minHeight: '100vh',
   margin: 'auto',

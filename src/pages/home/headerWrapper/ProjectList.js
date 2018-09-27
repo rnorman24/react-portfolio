@@ -7,7 +7,7 @@ const mqMax = breakpoints.map(
   bp => `@media (max-width: ${bp}px)`
 );
 
-const DemoStyle = styled("div")({
+const ProjectStyle = styled("div")({
   gridColumn: "1 / 3",
   gridRow: "4 / span 2",
   fontWeight: "700",
@@ -23,11 +23,11 @@ const DemoStyle = styled("div")({
   }
 });
 
-const DemoUl = styled("ul")({
+const ProjectUl = styled("ul")({
   margin: 0
 });
 
-const DemoLi = styled("li")(
+const ProjectLi = styled("li")(
   {
     borderTop: '5px solid #3c3b37',
     textAlign: 'left',
@@ -39,27 +39,27 @@ const BorderBottomStyle = {
   borderBottom: '5px solid #3c3b37'
 }
 
-const DemoList = () => (
-  <DemoStyle>
-    <DemoUl>
-      <DemoLi>
+const ProjectList = () => (
+  <ProjectStyle>
+    <ProjectUl>
+      <ProjectLi>
         <a href="https://guarded-peak-20346.herokuapp.com/">Beer Label Search Project</a>
-      </DemoLi>
-      <DemoLi>
+      </ProjectLi>
+      <ProjectLi>
         <a href="https://salty-taiga-65994.herokuapp.com/">Friend Finder Project</a>
-      </DemoLi>
-      <DemoLi>
+      </ProjectLi>
+      <ProjectLi>
         <a href="https://github.com/rnorman24/bamazon">
           bamazon MySQL Project
         </a>
-      </DemoLi>
-      <DemoLi style={BorderBottomStyle}>
+      </ProjectLi>
+      <ProjectLi style={BorderBottomStyle}>
         <a href="https://rnorman24.github.io/NYTSearch/">
           New York Times Search Project
         </a>
-      </DemoLi>
-    </DemoUl>
-  </DemoStyle>
+      </ProjectLi>
+    </ProjectUl>
+  </ProjectStyle>
 );
 
-export default DemoList;
+export default ProjectList;

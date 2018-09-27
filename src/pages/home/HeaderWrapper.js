@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "react-emotion";
 
-import DemoList from "./headerWrapper/DemoList";
-import FollowLinks from "./headerWrapper/FollowLinks";
+import ProjectList from "./headerWrapper/ProjectList";
+import ContactLinks from "./headerWrapper/ContactLinks";
 import ItemLinks from "./headerWrapper/ItemLinks";
 import Image from "./headerWrapper/Image";
 
@@ -84,8 +84,8 @@ const HeaderWrapper = () => (
       src={require("../../images/rn-150-image.png")}
       alt="Raymond Norman"
     />
-    <DemoList />
-    <FollowLinks />
+    <ProjectList />
+    <ContactLinks />
     <ItemLinks />
   </HeaderGrid>
 );
