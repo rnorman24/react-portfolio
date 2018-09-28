@@ -21,17 +21,3 @@ const App = () => (
 );
 
 export default App;
-
-/*
-class App extends Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <Global>
-          <Home />
-        </Global>
-      </ThemeProvider>
-    );
-  }
-}
-*/
