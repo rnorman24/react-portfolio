@@ -35,7 +35,7 @@ const ContactLinks = () => (
   <ContactLinkStyle>
     Check out my <a href="https://github.com/rnorman24/">GitHub</a> page.
     <br />
-    Contact me at <a href="https://www.roxoroffroad.com/">nray24@gmail.com</a>.
+    Contact me at <a href="mailto:nray24@gmail.com">nray24@gmail.com</a>.
   </ContactLinkStyle>
 );
 

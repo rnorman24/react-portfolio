@@ -11,6 +11,7 @@
     "emotion": "^9.2.8",
     "emotion-theming": "^9.2.9",
     "jquery": "^3.3.1",
+    "js-yaml": "^3.13.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-emotion": "^9.2.9",
