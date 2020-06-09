@@ -10,14 +10,14 @@
     "ajv": "^6.5.3",
     "emotion": "^10.0.14",
     "emotion-theming": "^9.2.9",
-    "eslint": "^6.0.0",
-    "jquery": "^3.4.1",
+    "eslint": "^7.2.0",
+    "jquery": "^3.5.1",
     "js-yaml": "^3.13.1",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-emotion": "^10.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
